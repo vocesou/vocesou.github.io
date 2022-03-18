@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Play:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Monda:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+
+html {
+font-size: 14px;
+}
+
+				
+@media (min-width: 768px) {
+html { 
+font-size: 16px;
+}
+        }
+
+        //.container{max-width: 960px;}
+
+.container{
+//padding-top: 15px;
+}
+.border-top {
+border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+border-bottom: 1px solid #e5e5e5;
+}
+.box-shadow {
+box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+body {
+font-family: "Monda", sans-serif, "source sans pro", Helvetica, Arial, sans-serif !important;
+}
+
+.play {
+font-family: "Monda", sans-serif, "source sans pro", Helvetica, Arial, sans-serif !important;
+display: block;
+padding: 0px 16px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px !important;
+margin-bottom: 15px;
+}
+.btn-lg {
+    border: 1px solid rgba(0,0,0,.125) !important;
+		min-height: 140px;
+}
+.card-body {
+    padding: 5px !important;
+}
+#ads {
+        position:absolute;
+        left:0;
+        right:0;
+        top:220px;
+        //bottom:0;
+        margin:auto;
+        width: 300px; 
+        height: 290px;
+        z-index:2;
+        color:gray;
+        font-weight:bold;
+        font-family:arial,"helvetica neue";
+        font-size:12px;
+        text-align:center;
+}
+.closex {
+        position: absolute; width: 13px; height: 13px; z-index: 1; left: 285px; top: 12px;
+			    	opacity: unset;
+}
+.closex img {
+        width:15px;
+        height: 15px;
+}
+#ppp2 {
+        margin:auto;
+        width: 960px; 
+        height: 540px;
+        text-align:center;
+        max-width: 100%;
+        display: block;
+}
+#gamecard {
+        font-family: 'Play';
+        border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	padding: 1rem .75rem;
+        box-shadow: 0 0.25rem 0.75rem 5px rgba(0, 0, 0, .05);
+	text-align: center;
+        margin-block-end:25px;
+}
+.status {
+    color: #007bff;
+		border: 1px solid transparent;
+    border-color: #007bff;
+		display: inline-block;
+    font-weight: 400;
+		text-align: center;
+    vertical-align: middle;
+		user-select: none;
+    background-color: transparent;
+    padding: .150rem .75rem;
+		margin: 0 0 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.scheduled {
+color: #007bff;
+border-color:  #007bff;
+}
+.live {
+color: #28a745;
+border-color:  #28a745;
+}
+.final {
+color: #dc3545;
+border-color:  #dc3545;
+}
+.delayed {
+color: #ffc107;
+border-color:  #ffc107;
+}
+.teamcard {
+   font-size: 20px; 
+   font-weight: 600;
+	 text-align: center;
+}
+.teamlogo {
+   max-width: 120px;
+   height: auto;
+   padding: 0.25rem; 
+   border-radius: 50%;
+}
+.game-feeds {
+  display: inline-flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#notice { 
+  display: none; 
+  margin-bottom: 30px; 
+  padding: 20px 10px; 
+  border-radius: 5px; 
+  background: #dc3545; 
+  color: #fff; 
+  text-align: center; 
+  font-weight: bold; 
+}
+.adrespl {
+  text-align: center; 
+	//min-height: 100px; 
+	//max-height: 280px; 
+	width: 100%; 
+	display: block; 
+	//margin: 20px 0 20px 0;
+        margin-block-end:25px;
+}
+.fxbtn {
+        margin: 5px 8px; 
+	width: 158px;
+	padding: .375rem .25rem;
+        font-family: "Play";
+}
+
+#pp2 {
+  margin: 10px 10px 10px 0;
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  max-width: 100%;
+  display: block;
+}
+
+#sidebar {
+height: 480px;
+}
+
+@media only screen and (max-width: 500px) {
+#pp2 {
+  margin:auto;
+  width: 88vw; 
+  height: 480px;
+  text-align:center;
+  //max-width: 100%;
+	//min-width: 100%;
+  display: block;
+}
+#sidebar {
+display: none;
+}
+}
