@@ -1,9 +1,0 @@
-function ChangeMuteState() {
-    var video = document.getElementById("background_video");
-    var video_cover = document.getElementById("video_cover");
-    if (video.paused) {
-        video.play();
-        video_cover.setAttribute('style', 'display:none;')
-    }
-    video.muted = !video.muted;
-}
