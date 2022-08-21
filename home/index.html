@@ -1,0 +1,258 @@
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>
+            
+        </title>
+
+<meta property="og:title" content="Jahy.html">
+<meta property="og:description" content="honestly not sure what i'm doing with this site at the moment. I'm just putting random things on it lmao.">
+<meta property="og:url" content="../index.html">
+<meta property="og:image" content="../../cdn.discordapp.com/emojis/674472143383429121.png">
+<meta name="theme-color" content="#181A1B">
+<script type="text/javascript" src="../../rawcdn.githack.com/lusaisai/Lyricer/5824e3ce264559db42b2baecb5e64ceaec5036c1/lyricer.min.js"></script>
+<link rel="stylesheet" href="../../raw.githubusercontent.com/lusaisai/Lyricer/master/lyricer.min.css">
+<link rel="shortcut icon" type="image/png" href="../../cdn.discordapp.com/emojis/674472143383429121.png" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+<style>
+            body{
+                font-family: montserrat,
+                sans-serif; 
+                padding:0;
+                margin:0
+            }
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                user-select: none; /* supported by Chrome and Opera */
+               -webkit-user-select: none; /* Safari */
+               -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Firefox */
+               -ms-user-select: none; /* Internet Explorer/Edge */
+               text-align: center
+            }
+        </style>
+<script type='text/javascript'> 
+            title = "matias.";
+            position = 0;
+            function scrolltitle() {
+                document.title = title.substring(position, title.length) + title.substring(0, position); 
+                position++;
+                if (position > title.length) position = 0;
+                titleScroll = window.setTimeout(scrolltitle,200);
+            }
+            scrolltitle();
+        </script>
+<body>
+<audio id="audio" autoplay loop>
+<source src="../music.mp3" type="audio/mpeg">
+</audio>
+<div class="container">
+<a class="nice-text">
+<h1>
+ブースト
+</h1>
+</a>
+<br>
+<a href="index.html"><img draggable="false" style="width:215xp;height:215xp;" src="../../cdn.discordapp.com/emojis/6540379989331149103860.png?v=1"></a>
+<br>
+<style>
+                .progress {
+                    width: 3px;
+                    height: 6px;
+                    background: #000000;
+                    transition: width .1s linear;
+                }
+            </style>
+<script>
+var timer;
+var percent = 0;
+var audio = document.getElementById("audio");
+audio.addEventListener("playing", function(_event) {
+  var duration = _event.target.duration;
+  advance(duration, audio);
+});
+audio.addEventListener("pause", function(_event) {
+  clearTimeout(timer);
+});
+var advance = function(duration, element) {
+  var progress = document.getElementById("progress");
+  increment = 10/duration
+  percent = Math.min(increment * element.currentTime * 10, 100);
+  progress.style.width = percent+'%'
+  startTimer(duration, element);
+}
+var startTimer = function(duration, element){ 
+  if(percent < 100) {
+    timer = setTimeout(function (){advance(duration, element)}, 100);
+  }
+}
+
+function togglePlay (e) {
+  e = e || window.event;
+  var btn = e.target;
+  if (!audio.paused) {
+    btn.classList.remove('active');
+    audio.pause();
+    isPlaying = false;
+  } else {
+    btn.classList.add('active');
+    audio.play();
+    isPlaying = true;
+  }
+}
+
+
+
+
+
+var audio = document.getElementById("audio");
+
+// Countdown
+audio.addEventListener("timeupdate", function() {
+    var timeleft = document.getElementById('timeleft'),
+        duration = parseInt( audio.duration ),
+        currentTime = parseInt( audio.currentTime ),
+        timeLeft = duration - currentTime,
+        s, m;
+    
+    
+    s = timeLeft % 60;
+    m = Math.floor( timeLeft / 60 ) % 60;
+    
+    s = s < 10 ? "0"+s : s;
+    m = m < 10 ? "0"+m : m;
+    
+    timeleft.innerHTML = m+":"+s;
+    
+}, false);
+
+// Countup
+audio.addEventListener("timeupdate", function() {
+    var timeline = document.getElementById('duration');
+    var s = parseInt(audio.currentTime % 60);
+    var m = parseInt((audio.currentTime / 60) % 60);
+    if (s < 10) {
+        timeline.innerHTML = m + ':0' + s;
+    }
+    else {
+        timeline.innerHTML = m + ':' + s;
+    }
+}, false);
+
+            </script>
+<div id="info">
+<span style="float:left;" id="duration"></span><span style="float:right;" id="timeleft"></span>
+</div>
+<br>
+<div class="progress" id="progress"></div>
+<a class="nice-text">
+<h2>
+<div id="lyricer">
+</div>
+</h2>
+</a>
+<script type="text/javascript">
+
+    var lyrics = `
+[00:00.00]
+[00:02.00]oh,
+[00:02.50]oh, baby
+[00:03.00]it's alright now
+[00:04.00]you ain't gotta flaut for me
+[00:06.33]yeah
+[00:06.71]If we go and touch
+[00:07.80]you can still touch my love
+[00:09.60]it's free
+[00:10.00]it's free (oh baby)
+[00:11.00]We can work without the perks just you and me
+[00:14.60]Work it out 'til we get it right
+[00:18.00]Baby if you strip
+[00:18.90]you can get a tip
+[00:19.65]'Cause I like you just the way you are
+[00:22.10]I'm about to strip and I'm well equipped
+[00:23.60]Can you handle me the way I'm on?
+[00:26.10]I don't need the G's or the car keys
+[00:27.60]Boy I like you just the way you are
+[00:30.00]Let me see ya strip,
+[00:30.90]you can get a tip
+[00:31.60]'Cause I like, I like, I like...
+[00:33.20]I ain't got no Visa
+[00:36.00]I ain't got no Red American Express
+[00:40.75]We can't go nowhere exotic
+[00:44.20]It don't matter 'cause I'm the one that loves you best
+[00:48.65]Talk to me girl
+[00:50.00]Oh,
+[00:50.50]Oh, baby,
+[00:51.00]it's alright now
+[00:52.00]you ain't gotta flaut for me
+[00:54.33]yeah
+[00:54.71]If we go and touch
+[00:55.80]you can still touch my love
+[00:57.60]it's free
+[00:58.00]it's free (oh baby)
+[00:59.00]We can work without the perks just you and me
+[01:02.60]Work it out 'til we get it right
+[01:05.70]I ain't got no money
+[01:08.00]I ain't got no car to take you on a date
+[01:13.00]I can't even buy you flowers
+[01:14.60]I can't even buy you flowers (flowers, flowers)
+[01:16.30]But together we could be the perfect soulmates
+[01:20.80]Talk to me girl
+[01:22.00]Baby girl, 
+[01:23.00]Baby girl, (yeah)
+[01:23.50]I don't got a huge ol' house I rent a room in a house
+[01:25.80]Listen baby girl,
+[01:27.30]I ain't got a motorboat but I can float ya boat
+[01:29.70]So listen baby girl
+[01:31.70]Once you get a dose of D.O.E.
+[01:32.80]you gon' want some mo'
+[01:33.80]So listen baby girl,
+[01:35.00]So listen baby girl, baby girl
+[01:37.40]I ain't got no visa
+[01:40.00]I ain't got no Red American Express
+[01:45.00]We can't go nowhere exotic
+[01:48.20]It don't matter 'cause I'm the one that loves you best
+[01:52.90]Talk to me girl
+[01:54.20]Oh,
+[01:54.80]Oh, baby,
+[01:55.40]it's alright now
+[01:56.00]you ain't gotta flaut for me
+[01:58.00]yeah
+[01:58.80]If we go and touch
+[01:59.80]you can still touch my love
+[02:01.60]it's free
+[02:02.40]it's free (oh baby)
+[02:03.00]We can work without the perks just you and me
+[02:06.40]Work it out 'til we get it right
+`;
+
+    var lrc = new Lyricer({"showLines": 0, "clickable": false});
+    lrc.setLrc(lyrics);
+    window.addEventListener("lyricerclick", function(e){
+        // console.log('clicked on ' + e.detail.time);
+    });
+    
+    var timeOffset = 0;
+    
+    var audio = document.getElementById('audio');
+    audio.addEventListener( "timeupdate", function() {
+        lrc.move(audio.currentTime + timeOffset);
+    });
+    
+    window.addEventListener('lyricerclick', function(e){
+        if (e.detail.time > 0) {
+            audio.currentTime = e.detail.time;
+        }
+    });
+    
+    </script>
+</div>
+</body>
+
+</html>
